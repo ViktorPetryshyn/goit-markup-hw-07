@@ -19,11 +19,10 @@
   box-shadow: none;
   background-color: #ffffff;
   fill: $icon-color;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.soc-media__link:hover,
-.soc-media__link:focus {
-  background-color: $accented-text-color;
-  fill: #ffffff;
+  transition: background-color $basic-transition, fill $basic-transition;
+  &:hover,
+  &:focus {
+    background-color: $accented-text-color;
+    fill: #ffffff;
+  }
 }
